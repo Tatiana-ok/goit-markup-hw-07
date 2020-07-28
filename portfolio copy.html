@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="conteiner flex">
+            <nav class="nav flex">
+                <a class="logo" href="./index.html"><span>Web</span> Studio</a>
+                <ul class="nav-title">
+                    <li><a class="link" href="./index.html">Студия</a></li>
+                    <li><a class="current link" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <address class="contacts">
+                <ul>
+                    <li class="contacts-item"><a class="contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>                              
+            </address>
+        </div>
+                   
+    </header>
+    <main>
+        <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+                <form class="form" autocomplete="off">
+                    <h2 class="form-artical">Оставьте свои данные, мы вам перезвоним</h2>
+                    <div class="form-field"> 
+                        <input class="form-input" type="text" name="name" id="name" placeholder="   ">
+                        <label class="form-label" for="name">Имя</label>
+                        <svg class="svg-name input-position">
+                            <use href="./image/Modal/symbol-defs2.svg#icon-Name"></use>
+                        </svg>              
+                    </div>
+                    <div class="form-field">
+                        <input class="form-input" type="tel" name="phone_number" id="tel" placeholder="   ">
+                        <label class="form-label" for="tel">Телефон</label>
+                        <svg class="svg-telefon input-position">
+                            <use href="./image/Modal/symbol-defs2.svg#icon-Telefon"></use>
+                        </svg>
+                    </div>  
+                    <div class="form-field">
+                        <input class="form-input" type="mail" name="e-mail" id="mail" placeholder="   ">
+                        <label class="form-label" for="mail">Почта</label> 
+                        <svg class="svg-mail input-position">
+                            <use href="./image/Modal/symbol-defs2.svg#icon-Leter"></use>
+                        </svg>
+                    </div>  
+                    <div class="form-field comment" name="comment" id="comment">
+                        <textarea class="textarea"
+                        name="comment"
+                        rows="5"
+                        cols="45"
+                        placeholder=" "
+                        ></textarea>
+                        <label class="form-comment" for="comment">Комментарий</label> 
+                    </div>
+                    <div class="policy">
+                        <input type="checkbox" name="policy" id="policy">
+                        <label for="policy-label">Соглашаюсь с рассылкой и принимаю</label>
+                        <a href="">Условия договора</a>
+                    </div>
+                    <button class="modal-send">Отправить</button>
+                    <button data-modal-close class="link-close">
+                        <svg class="close">
+                            <use href="./image/Modal/symbol-defs2.svg#close">
+                            </use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+
+        <section class="section">
+            <div class="conteiner">
+                <h1 class="none">Наши работы</h1>
+                <ul class="filter flex-secondary">
+                    <li class="fil-item"><button type="button" class="fil-button">Все</button></li>
+                    <li class="fil-item"><button type="button" class="fil-button">Веб-сайты</button></li>
+                    <li class="fil-item"><button type="button" class="fil-button">Приложения</button></li>
+                    <li class="fil-item"><button type="button" class="fil-button">Дизайн</button></li>
+                    <li class="fil-item"><button type="button" class="fil-button">Маркетинг</button></li>
+                </ul>
+                <ul class="list flex-secondary">
+                    <li class="item">
+                        <div class="div">
+                            <a href="" class="list-link">
+                                <div class="list-anime">
+                                    <img src="./image/Portfolio/background-1.jpg" width="370" alt="Постер Технокряк">
+                                    <div class="text-img">
+                                        <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="list-artical">Технокряк</h2>
+                                    <p class="description">Веб-сайт</p>
+                                </div>
+                            
+                            </a>
+                        </div>
+                        
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </section>
+        
+        <form class="js-speaker-form">
+            <input type="text" name="user-name"  />
+        </form>
+
+
+
+
+        <script>
+            (() => {
+                document 
+                    .querySelector(".is-speaker-form")
+                    .addEventListener("submit", e => {
+                        e.preventDefault();
+
+                        new FormData(e.currentTarget).forEach((value, name) => console.log ("${name}: ${value}"),
+                        );
+                    });
+            })  ();
+        </script>
+
+
+
+
+
+    </main>
+    <footer class="section-footer">
+        <div class="conteiner flex">
+            <div>
+                <a class="logo-footer" href="./index.html"><span>Web</span> Studio</a>
+                <address>
+                    <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul>
+                        <li><a class="contacts mail" href="mailto:info@example.com">info@example.com</a></li>
+                        <li><a class="contacts tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    </ul> 
+                </address>
+            </div>
+            
+            <div class="join">
+                <b class="join-title">Присоединяйтесь</b>
+                <ul class="flex-secondary">
+                    <li class="join-link"><a href="" aria-label="Ссылка на Instagram">
+                        <svg class='footer-network'>
+                            <use href="./image/symbol-defs.svg#icon-Instagram"></use>
+
+                        </svg></a>
+                    </li>
+                    <li class="join-link"><a href="" aria-label="Ссылка на Twitter">
+                        <svg class='footer-network'>
+                            <use href="./image/symbol-defs.svg#icon-Twitter"></use>
+
+                        </svg></a>
+                    </li>
+                    <li class="join-link"><a href="" aria-label="Ссылка на Facebook">
+                        <svg class='footer-network'>
+                            <use href="./image/symbol-defs.svg#icon-Facebook"></use>
+                        </svg></a>
+                    </li>
+                    <li class="join-link"><a href="" aria-label="Ссылка на LinkedIn">
+                        <svg class='footer-network'>
+                            <use href="./image/symbol-defs.svg#icon-Linkedin"></use>
+
+                        </svg></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe flex-secondary">
+                <div>
+                    <b class="subscribe-title">Подпишитесь на рассылку</b>
+                    <input class="subscribe-input" type="text" name="E-mail" placeholder="E-mail">
+                </div>
+                <div class="subscribe-button flex-secondary">
+                    <a href="" >Подписаться </a>
+                    <svg class="icon-join">
+                        <use href="./image/symbol-defs.svg#icon-icon-join"></use>
+                    </svg></a>
+                </div>
+            </div>
+                    
+        </div>
+        <p class="caption">2020 | Developed by GoIT Students</p>
+    </footer>
+
+    
+</body>
+</html>
+
+
