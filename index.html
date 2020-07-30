@@ -336,47 +336,49 @@
                 <div class="modal">
                     <form class="form" autocomplete="off">
                         <h2 class="form-artical">Оставьте свои данные, мы вам перезвоним</h2>
-                        <div class="form-field"> 
-                            <input class="form-input" type="text" name="name" id="name" placeholder="   ">
-                            <label class="form-label" for="name">Имя</label>
-                            <svg class="svg-name input-position">
-                                <use href="./image/Modal/symbol-defs2.svg#icon-Name"></use>
-                            </svg>              
-                        </div>
-                        <div class="form-field">
-                            <input class="form-input" type="tel" name="phone_number" id="tel" placeholder="   ">
-                            <label class="form-label" for="tel">Телефон</label>
-                            <svg class="svg-telefon input-position">
-                                <use href="./image/Modal/symbol-defs2.svg#icon-Telefon"></use>
-                            </svg>
-                        </div>  
-                        <div class="form-field">
-                            <input class="form-input" type="mail" name="e-mail" id="mail" placeholder="   ">
-                            <label class="form-label" for="mail">Почта</label> 
-                            <svg class="svg-mail input-position">
-                                <use href="./image/Modal/symbol-defs2.svg#icon-Leter"></use>
-                            </svg>
-                        </div>  
-                        <div class="form-field comment" name="comment" id="comment">
-                            <textarea class="textarea"
-                            name="comment"
-                            rows="5"
-                            cols="45"
-                            placeholder=" "
-                            ></textarea>
-                            <label class="form-comment" for="comment">Комментарий</label> 
-                        </div>
-                        <div class="policy">
-                            <label class="policy-label" for="policy">
-                                <input class="checkbox" type="checkbox" name="policy" id="policy">
-                                <svg class="checkbox-svg">
-                                    <use href="./image/Modal/symbol-defs2.svg#icon-checkbox-secondary"></use>
+                        <ul>
+                            <li class="form-field"> 
+                                <input class="form-input" type="text" name="name" id="name" placeholder="   ">
+                                <label class="form-label" for="name">Имя</label>
+                                <svg class="svg-name input-position">
+                                    <use href="./image/Modal/symbol-defs2.svg#icon-Name"></use>
+                                </svg>              
+                            </li>
+                            <li class="form-field">
+                                <input class="form-input" type="tel" name="phone_number" id="tel" placeholder="   ">
+                                <label class="form-label" for="tel">Телефон</label>
+                                <svg class="svg-telefon input-position">
+                                    <use href="./image/Modal/symbol-defs2.svg#icon-Telefon"></use>
                                 </svg>
-                                Соглашаюсь с рассылкой и принимаю
-                            </label>
-                            <a href="">Условия договора</a>
-                            
-                        </div>
+                            </li>  
+                            <li class="form-field">
+                                <input class="form-input" type="mail" name="e-mail" id="mail" placeholder="   ">
+                                <label class="form-label" for="mail">Почта</label> 
+                                <svg class="svg-mail input-position">
+                                    <use href="./image/Modal/symbol-defs2.svg#icon-Leter"></use>
+                                </svg>
+                            </li>  
+                            <li class="form-field comment" name="comment" id="comment">
+                                <textarea class="textarea"
+                                name="comment"
+                                rows="5"
+                                cols="45"
+                                placeholder=" "
+                                ></textarea>
+                                <label class="form-comment" for="comment">Комментарий</label> 
+                            </li>
+                            <li class="policy">
+                                <label class="policy-label" for="policy">
+                                    <input class="checkbox" type="checkbox" name="policy" id="policy">
+                                    <svg class="checkbox-svg">
+                                        <use href="./image/Modal/symbol-defs2.svg#icon-checkbox-secondary"></use>
+                                    </svg>
+                                    Соглашаюсь с рассылкой и принимаю
+                                </label>
+                                <a href="">Условия договора</a>
+                                
+                            </li>
+                        </ul>
                         <button class="modal-send">Отправить</button>
                         <button data-modal-close class="link-close">
                             <svg class="close">
@@ -432,18 +434,18 @@
                         </li>
                     </ul>
                 </div>
-                <div class="subscribe flex-secondary">
+                <form class="subscribe flex-secondary">
                     <div>
                         <b class="subscribe-title">Подпишитесь на рассылку</b>
                         <input class="subscribe-input" type="mail" name="subscribe" placeholder="E-mail">
                     </div>
-                    <div class="subscribe-button flex-secondary">
-                        <a href="" >Подписаться </a>
+                    <button class="subscribe-button flex-secondary">
+                        Подписаться
                         <svg class="icon-join">
                             <use href="./image/symbol-defs.svg#icon-icon-join"></use>
                         </svg></a>
-                    </div>
-                </div>
+                    </button>
+                </form>
                         
             </div>
             <p class="caption">2020 | Developed by GoIT Students</p>
@@ -452,3 +454,61 @@
         <script src="./js/modal.js"></script>
     </body>
 </html>
+
+<div data-modal class="backdrop is-hidden">
+    <div class="modal">
+        <form class="form" autocomplete="off">
+            <h2 class="form-artical">Оставьте свои данные, мы вам перезвоним</h2>
+            <ul>
+                <li class="form-field"> 
+                    <input class="form-input" type="text" name="name" id="name" placeholder="   ">
+                    <label class="form-label" for="name">Имя</label>
+                    <svg class="svg-name input-position">
+                        <use href="./image/Modal/symbol-defs2.svg#icon-Name"></use>
+                    </svg>              
+                </li>
+                <li class="form-field">
+                    <input class="form-input" type="tel" name="phone_number" id="tel" placeholder="   ">
+                    <label class="form-label" for="tel">Телефон</label>
+                    <svg class="svg-telefon input-position">
+                        <use href="./image/Modal/symbol-defs2.svg#icon-Telefon"></use>
+                    </svg>
+                </li>  
+                <li class="form-field">
+                    <input class="form-input" type="mail" name="e-mail" id="mail" placeholder="   ">
+                    <label class="form-label" for="mail">Почта</label> 
+                    <svg class="svg-mail input-position">
+                        <use href="./image/Modal/symbol-defs2.svg#icon-Leter"></use>
+                    </svg>
+                </li>  
+                <li class="form-field comment" name="comment" id="comment">
+                    <textarea class="textarea"
+                    name="comment"
+                    rows="5"
+                    cols="45"
+                    placeholder=" "
+                    ></textarea>
+                    <label class="form-comment" for="comment">Комментарий</label> 
+                </li>
+                <li class="policy">
+                    <label class="policy-label" for="policy">
+                        <input class="checkbox" type="checkbox" name="policy" id="policy">
+                        <svg class="checkbox-svg">
+                            <use href="./image/Modal/symbol-defs2.svg#icon-checkbox-secondary"></use>
+                        </svg>
+                        Соглашаюсь с рассылкой и принимаю
+                    </label>
+                    <a href="">Условия договора</a>
+                    
+                </li>
+            </ul>
+            <button class="modal-send">Отправить</button>
+            <button data-modal-close class="link-close">
+                <svg class="close">
+                    <use href="./image/Modal/symbol-defs2.svg#icon-close">
+                    </use>
+                </svg>
+            </button>
+        </form>
+    </div>
+</div>

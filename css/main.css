@@ -3,11 +3,15 @@
 /* Вторичный цвет текста color: #212121; */
 /* Акцент color: #2196F3; */
 /* Цвет фона вторичный background: #F5F4FA;*/
+/*Основной шрифт 'Roboto', sans-serif;*/
+/*Вторичный шрифт 'Raleway', sans-serif;*/
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196F3;
   --secondary-background-color: #F5F4FA;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 }
 
 html {
@@ -23,7 +27,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--primary-font);
   color: var(--primary-text-color);
   background-color: #ffffff;
   letter-spacing: 0.03em;
@@ -100,7 +104,7 @@ nav > .logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font);
 }
 
 .logo > span {
@@ -669,6 +673,9 @@ footer .contacts {
 }
 
 .subscribe-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -677,16 +684,15 @@ footer .contacts {
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
   border-radius: 4px;
-}
-
-.subscribe-button a {
-  display: inline-block;
+  background-color: #2196F3;
   color: #FFFFFF;
   font-weight: 900;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .subscribe-button img {
